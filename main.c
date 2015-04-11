@@ -14,10 +14,8 @@ struct s_studente {
 struct s_studente studente[N];
 
 int main(int argc, char** argv) {
-    // Dichiara le variabili locali
     int i;
     
-    // Codice per l'inserimento, da parte dell'utente, dei dati
     for(i=0;i<N;i++) {
         printf("Inserisci il nome dell' alunno numero %d: ", i);
         scanf("%s", &(studente[i].nome));
@@ -28,8 +26,6 @@ int main(int argc, char** argv) {
         printf("Inserisci la classe dell' alunno numero %d: ", i);
         scanf("%s", &(studente[i].classe));
     }
-    
-    // Codice per la stampa dei dati (uno studente per riga)
     for(i=0;i<N;i++) {
         printf("\n%s, %s, %d, %s", studente[i].nome, studente[i].cognome, studente[i].eta, studente[i].classe);
     }
